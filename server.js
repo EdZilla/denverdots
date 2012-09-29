@@ -34,7 +34,7 @@ io.set("log level", 1);
 io.sockets.on("connection", function(socket) {
     var id = socket.id;
 
-    socket.emit("notice", { msg : "Hello, Dev-Denver" } );
+    socket.emit("notice", { msg : "Hello, Dev-Denver-ejy" } );
     socket.on("cursor", function(data) {
         data.id = id;
         io.sockets.emit("cursor", data);
